@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 白色 -->
+    <drawable name="bg_white">#FFFFFF</drawable>
+    <drawable name="item_up">#F8F8F8</drawable>
+    <drawable name="item_down">#EBEBEB</drawable>
+
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_layout_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_headbar" />
+    <View style="@style/view_horizontal_line_gray_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="服务设施"
+                android:textColor="@color/text_black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_station_facilities_type_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_xishoujian"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="洗手间"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp" />
+
+                <View style="@style/view_vertical_line_gray_match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_station_facilities_type_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_bianlidian"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="便利店"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp" />
+
+                <View style="@style/view_vertical_line_gray_match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_station_facilities_type_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_dianti"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="电梯"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp" />
+
+                <View style="@style/view_vertical_line_gray_match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_station_facilities_type_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_chongzhidian"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="充值点"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="商业设施"
+                android:textColor="@color/text_black" />
+
+            <TextView
+                android:id="@+id/tv_station_facilities_type_5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="ATM机"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <TextView
+                android:id="@+id/tv_station_facilities_type_6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="自助缴费"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <TextView
+                android:id="@+id/tv_station_facilities_type_7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="自动售货"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <TextView
+                android:id="@+id/tv_station_facilities_type_8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="自助证件"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <TextView
+                android:id="@+id/tv_station_facilities_type_9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="书报"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <TextView
+                android:id="@+id/tv_station_facilities_type_10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="餐饮"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <TextView
+                android:id="@+id/tv_station_facilities_type_11"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="综合业务点"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

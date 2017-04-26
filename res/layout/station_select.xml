@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_station_select_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/common_headbar" />
+
+        <View style="@style/view_horizontal_line_gray_height" />
+
+        
+    </LinearLayout>
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_station_select_search"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/search_frame"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/et_station_select_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/search_gray"
+                    android:drawablePadding="10dp"
+                    android:gravity="start|center_vertical"
+                    android:hint="输入查询的关键字"
+                    android:imeOptions="actionSearch"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_station_select_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="0"
+                    android:gravity="center"
+                    android:minWidth="60dp"
+                    android:text="取消"
+                    android:textColor="@color/text_blue"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_station_select_search_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+            </ListView>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_station_select_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_station_select_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/station_select_line_1"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:text="1"
+                android:textColor="@color/text_white"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_station_select_line_1_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/station_select_line_1"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:text="1号线"
+                    android:textColor="@color/text_white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_station_select_line_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/station_select_line_2"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:text="2"
+                android:textColor="@color/text_white"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_station_select_line_2_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/station_select_line_2"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:text="2号线"
+                    android:textColor="@color/text_white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_station_select_line_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/station_select_line_3"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:text="3"
+                android:textColor="@color/text_white"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_station_select_line_3_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/station_select_line_3"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:text="3号线"
+                    android:textColor="@color/text_white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_station_select_line_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/station_select_line_10"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:text="10"
+                android:textColor="@color/text_white"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_station_select_line_10_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/station_select_line_10"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:text="10号线"
+                    android:textColor="@color/text_white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_station_select_line_s1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/station_select_line_s1"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:text="S1"
+                android:textColor="@color/text_white"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_station_select_line_s1_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/station_select_line_s1"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:text="S1号线"
+                    android:textColor="@color/text_white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_station_select_line_s8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/station_select_line_s8"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:text="S8"
+                android:textColor="@color/text_white"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_station_select_line_s8_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/station_select_line_s8"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:text="S8号线"
+                    android:textColor="@color/text_white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_station_select"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:background="@color/white" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

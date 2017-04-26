@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View style="@style/view_horizontal_line_gray_cross" />
+
+    <LinearLayout
+        android:id="@+id/ll_ad_list_item_all"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/mail_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_ad_list_item_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mail" />
+
+        <TextView
+            android:id="@+id/tv_ad_list_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_ad_list_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textColor="@color/text_black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View style="@style/view_horizontal_line_gray_cross" />
+
+</LinearLayout>

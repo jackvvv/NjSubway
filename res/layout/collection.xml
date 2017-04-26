@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_layout_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_common_headbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/arrow_left_blue" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_collection_station"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/btn_bg_wihte_blue"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="站点收藏"
+                android:textColor="@drawable/text_color_blue_wihte"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_collection_article"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/btn_bg_wihte_blue"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="文章收藏"
+                android:textColor="@drawable/text_color_blue_wihte"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/view_horizontal_line_gray_height" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ad_bg_bottom"
+            android:scaleType="fitXY" />
+
+        <ListView
+            android:id="@+id/lv_collection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="8dp"
+            android:layoutAnimation="@anim/navagation_listview_anim" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

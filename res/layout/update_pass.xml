@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_layout_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_headbar" />
+
+    <View style="@style/view_horizontal_line_gray_height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical" >
+
+        <View style="@style/view_horizontal_line_gray" />
+
+        <EditText
+            android:id="@+id/et_update_pass_old_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="请输入旧密码"
+            android:maxLength="11"
+            android:numeric="integer"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <View style="@style/view_horizontal_line_gray" />
+
+        <EditText
+            android:id="@+id/et_update_pass_new_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="请输入新密码"
+            android:maxLength="11"
+            android:numeric="integer"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <View style="@style/view_horizontal_line_gray" />
+
+        <EditText
+            android:id="@+id/et_update_pass_new_pass_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="请输入确认密码"
+            android:maxLength="11"
+            android:numeric="integer"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <View style="@style/view_horizontal_line_gray" />
+
+        <Button
+            android:id="@+id/btn_update_pass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/blue"
+            android:text="确定"
+            android:textColor="@color/text_white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

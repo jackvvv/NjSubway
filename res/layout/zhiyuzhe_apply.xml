@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_layout_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_headbar" />
+
+    <View style="@style/view_horizontal_line_gray_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <EditText
+                android:id="@+id/et_zhiyuzhe_applay_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="请输入姓名"
+                android:maxLength="11"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:hint="请选择性别"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_zhiyuzhe_apply_sex_man"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1" >
+
+                    <com.itpoints.njmetro.view.SmoothCheckBox
+                        android:id="@+id/scb_zhiyuzhe_apply_sex_man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/scb_zhiyuzhe_apply_sex_man"
+                        android:text="男"
+                        android:textColor="@color/text_black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_zhiyuzhe_apply_sex_woman"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1" >
+
+                    <com.itpoints.njmetro.view.SmoothCheckBox
+                        android:id="@+id/scb_zhiyuzhe_apply_sex_woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/scb_zhiyuzhe_apply_sex_woman"
+                        android:text="女"
+                        android:textColor="@color/text_black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <EditText
+                android:id="@+id/et_zhiyuzhe_applay_age"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="请输入年龄"
+                android:numeric="integer"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <EditText
+                android:id="@+id/et_zhiyuzhe_applay_desc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="请输入申请说明"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <Button
+                android:id="@+id/btn_zhiyuzhe_applay_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/blue"
+                android:text="确定"
+                android:textColor="@color/text_white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

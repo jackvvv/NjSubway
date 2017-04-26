@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_layout_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_headbar" />
+
+    <View style="@style/view_horizontal_line_gray_height" />
+
+    <RelativeLayout
+        android:id="@+id/rl_contact_us_website"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="官方网址"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_contact_us_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_right" />
+
+        <TextView
+            android:id="@+id/tv_contact_us_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_contact_us_website"
+            android:text="www.njmetro.com.cn"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View style="@style/view_horizontal_line_gray" />
+
+    <RelativeLayout
+        android:id="@+id/rl_contact_us_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="服务电话"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_contact_us_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_right" />
+
+        <TextView
+            android:id="@+id/tv_contact_us_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_contact_us_phone"
+            android:text="025-51899999"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View style="@style/view_horizontal_line_gray" />
+
+    <RelativeLayout
+        android:id="@+id/rl_contact_us_weibo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="官方微博"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_contact_us_blog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_right" />
+
+        <TextView
+            android:id="@+id/tv_contact_us_blog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_contact_us_blog"
+            android:text="南京地铁"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View style="@style/view_horizontal_line_gray" />
+
+    <RelativeLayout
+        android:id="@+id/rl_contact_us_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="官方微信"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_contact_us_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_right" />
+
+        <TextView
+            android:id="@+id/tv_contact_us_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_contact_us_wechat"
+            android:text="南京地铁"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View style="@style/view_horizontal_line_gray" />
+
+</LinearLayout>

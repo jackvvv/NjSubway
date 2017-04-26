@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_layout_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_headbar" />
+
+    <View style="@style/view_horizontal_line_gray_height" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ad_bg_bottom"
+            android:scaleType="fitXY" />
+
+        <com.itpoints.njmetro.view.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/refresh_ad_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include layout="@layout/refresh_head" />
+
+            <com.itpoints.njmetro.view.pulltorefresh.PullableListView
+                android:id="@+id/lv_ad_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/transparent"
+                android:dividerHeight="8dp"
+                android:layoutAnimation="@anim/navagation_listview_anim" >
+            </com.itpoints.njmetro.view.pulltorefresh.PullableListView>
+
+            <include layout="@layout/load_more" />
+        </com.itpoints.njmetro.view.pulltorefresh.PullToRefreshLayout>
+    </RelativeLayout>
+
+</LinearLayout>

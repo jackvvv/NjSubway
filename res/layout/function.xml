@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_layout_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_headbar" />
+
+    <View style="@style/view_horizontal_line_gray_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_function_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_user_info"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="个人信息"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <TextView
+                android:id="@+id/tv_function_line_query"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_line_query"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="线路查询"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <TextView
+                android:id="@+id/tv_function_site_info"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_station_info"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="站点信息"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <TextView
+                android:id="@+id/tv_function_collcation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_collection"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="我的收藏"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray_height" />
+
+            <TextView
+                android:id="@+id/tv_function_update"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_data_update"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="数据更新"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <TextView
+                android:id="@+id/tv_function_examine"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_examine"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="调查"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <TextView
+                android:id="@+id/tv_function_zhiyuzhe"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_volunteer"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="地铁红领巾"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <TextView
+                android:id="@+id/tv_function_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_feekback"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="反馈"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_function_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/iv_function_contact_us"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/icon_contact_us" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_function_contact_us"
+                    android:text="联系我们"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_function_clear_chche"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/iv_function_clear_chche"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/setting_clear_chche_ico" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_function_clear_chche"
+                    android:text="清除缓存"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <View style="@style/view_horizontal_line_gray" />
+
+            <TextView
+                android:id="@+id/tv_function_about"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_about"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="关于"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+
+            <View style="@style/view_horizontal_line_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

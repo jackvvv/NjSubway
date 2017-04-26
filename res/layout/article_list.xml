@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_headbar" />
+
+    <View style="@style/view_horizontal_line_gray_height" />
+
+    <com.itpoints.njmetro.view.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/refresh_article_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/refresh_head" />
+
+        <com.itpoints.njmetro.view.pulltorefresh.PullableObservableListView
+            android:id="@+id/lv_article_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.itpoints.njmetro.view.pulltorefresh.PullableObservableListView>
+
+        <include layout="@layout/load_more" />
+    </com.itpoints.njmetro.view.pulltorefresh.PullToRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_dialog_line_menu_station"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_yellow"
+        android:drawableRight="@drawable/icon_menu_detail"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="查看详情"
+        android:textColor="@color/text_white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_blue"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_dialog_line_menu_addr_start"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="设置起点"
+            android:textColor="@color/text_white"
+            android:textSize="16sp" />
+
+        <View style="@style/view_vertical_line_wihte" />
+
+        <TextView
+            android:id="@+id/tv_dialog_line_menu_addr_end"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="设置终点"
+            android:textColor="@color/text_white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

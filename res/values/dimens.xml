@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="sticky_item_horizontalSpacing">2dp</dimen>
+
+</resources>
